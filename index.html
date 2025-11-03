@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Questionário de Compatibilidade</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="form-container">
+    <h1>💚 Rinder 💚 </h1>
+    <p class="subtitle">Nos ajude a entender como as pessoas percebem relacionamentos e aplicativos de review.</p>
+
+    <form action="https://formspree.io/f/xyzbvdry" method="POST">
+      <div class="form-group">
+        <label for="idade">1. Idade</label>
+        <input type="number" id="idade" name="idade" required />
+      </div>
+
+      <div class="form-group">
+        <label for="uso">2. Você costuma usar aplicativos de relacionamento?</label>
+        <select id="uso" name="uso-apps" required>
+          <option value="">Selecione...</option>
+          <option value="frequente">Sim, com frequência</option>
+          <option value="as vezes">Às vezes</option>
+          <option value="raro">Raramente</option>
+          <option value="nunca">Nunca</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="incomoda">3. O que mais te incomoda nesses aplicativos?</label>
+        <textarea id="incomoda" name="incomoda" rows="3" placeholder="Descreva aqui..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="opiniao">4. O que você acharia de um aplicativo de reviews de encontros?</label>
+        <select id="opiniao" name="opiniao" required>
+          <option value="">Selecione...</option>
+          <option value="interessante">Achei interessante</option>
+          <option value="duvidas">Tenho dúvidas</option>
+          <option value="nao gostei">Não gostei</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="confianca">5. O que te faria confiar em um app assim?</label>
+        <textarea id="confianca" name="confianca" rows="3" placeholder="Compartilhe sua opinião..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="nota">6. De 0 a 10, qual seria sua probabilidade de testar?</label>
+        <input type="number" id="nota" name="nota" min="0" max="10" required />
+      </div>
+
+      <div class="form-group">
+        <label for="sugestao">7. Deixe aqui a sua sugestão</label>
+        <textarea id="sugestao" name="sugestao" rows="3" placeholder="Escreva sua sugestão..."></textarea>
+      </div>
+
+      <button type="submit">Enviar Respostas</button>
+    </form>
+
+    <footer>💡 Projeto piloto — versão beta</footer>
+  </main>
+</body>
+</html>
